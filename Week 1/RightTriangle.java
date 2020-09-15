@@ -8,6 +8,10 @@ public class RightTriangle {
             System.out.println("No sides can be negative.");
         }
 
+        if (sideOne > sideThree || sideTwo > sideThree) {
+            System.out.println("Please enter the hypoteneuse last.");
+        }
+
         if (sideThree * sideThree == sideOne * sideOne + sideTwo * sideTwo) {
             System.out.println("true");
         } else {
