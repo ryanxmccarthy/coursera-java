@@ -8,7 +8,7 @@ public class GreatCircle {
         double a = Math.pow(Math.sin((x2 - x1) / 2), 2)
                 + Math.cos(x1) * Math.cos(x2) * Math.pow(Math.sin((y2 - y1) / 2), 2);
 
-        double distance = 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(a)));
+        double distance = 2 * 6371.0 * Math.asin(Math.min(1, Math.sqrt(a)));
 
         System.out.println(distance + " kilometers");
     }

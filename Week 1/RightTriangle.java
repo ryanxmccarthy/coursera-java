@@ -4,18 +4,10 @@ public class RightTriangle {
         int sideTwo = Integer.parseInt(args[1]);
         int sideThree = Integer.parseInt(args[2]);
 
-        if (sideOne < 0 || sideTwo < 0 || sideThree < 0) {
-            System.out.println("No sides can be negative.");
-        }
+        int squareOne = sideOne * sideOne;
+        int squareTwo = sideTwo * sideTwo;
+        int squareThree = sideThree * sideThree;
 
-        if (sideOne > sideThree || sideTwo > sideThree) {
-            System.out.println("Please enter the hypoteneuse last.");
-        }
-
-        if (sideThree * sideThree == sideOne * sideOne + sideTwo * sideTwo) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        System.out.println(squareOne + squareTwo == squareThree);
     }
 }
