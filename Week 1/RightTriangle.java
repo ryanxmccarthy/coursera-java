@@ -4,10 +4,14 @@ public class RightTriangle {
         int sideTwo = Integer.parseInt(args[1]);
         int sideThree = Integer.parseInt(args[2]);
 
+        boolean allSidesPositive = (sideOne > 0) && (sideTwo > 0) && (sideThree > 0);
+
         int squareOne = sideOne * sideOne;
         int squareTwo = sideTwo * sideTwo;
         int squareThree = sideThree * sideThree;
 
-        System.out.println(squareOne + squareTwo == squareThree);
+        boolean isRightTriangle = (squareOne + squareTwo == squareThree) && allSidesPositive;
+
+        System.out.println(isRightTriangle);
     }
 }
