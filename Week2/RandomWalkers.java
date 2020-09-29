@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class RandomWalkers {
     public static void main(String[] args) {
         int r = Integer.parseInt(args[0]);
